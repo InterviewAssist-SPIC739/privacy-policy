@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - InterviewAssist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-light: #818cf8;
+            --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background: var(--primary-light);
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+            color: var(--primary-light);
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #334155;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 10px;
+        }
+
+        .contact-box {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            margin-top: 20px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-light);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: March 2025</p>
+        </header>
+
+        <section>
+            <p>Welcome to <strong>InterviewAssist</strong>. Your privacy is a priority for us. This policy outlines how we collect, use, and protect your information when you use our services.</p>
+        </section>
+
+        <section>
+            <h2>1. Information Collection</h2>
+            <h3>1.1 Personal Data</h3>
+            <ul>
+                <li><strong>Account Details:</strong> Name, professional email addresses, and encrypted passwords.</li>
+                <li><strong>Profile Details:</strong> Phone number, academic major, graduation year, bio, and professional links (e.g., LinkedIn).</li>
+                <li><strong>Professional Identity:</strong> Current company, designation, and areas of specialization.</li>
+            </ul>
+
+            <h3>1.2 Content & Interaction</h3>
+            <ul>
+                <li><strong>Shared Experiences:</strong> Interview insights, difficulty ratings, and preparation strategies shared with the community.</li>
+                <li><strong>Questions & Answers:</strong> Interactions within the student and alumni forums.</li>
+                <li><strong>Activity:</strong> Helpful votes, saved companies, and bookmarks.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Use of Information</h2>
+            <p>We use your data to provide a seamless experience, including:</p>
+            <ul>
+                <li>Managing your professional profile and account security.</li>
+                <li>Facilitating mentor-student interactions (Alumni to Student).</li>
+                <li>Improving our recommendation algorithms for interview preparation.</li>
+                <li>Ensuring platform security through Two-Factor Authentication (2FA).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Secure Processing</h2>
+            <p>We do not sell your personal information. Data is used solely for platform functionality and is protected by industry-standard encryption (HTTPS). We use professional third-party services for secure backend hosting and image management.</p>
+        </section>
+
+        <section>
+            <h2>4. Your Controls</h2>
+            <p>You have full autonomy over your data:</p>
+            <ul>
+                <li><strong>Edit Profile:</strong> Update your information anytime in the settings.</li>
+                <li><strong>Security:</strong> Enable or disable 2FA at your discretion.</li>
+                <li><strong>Deletion:</strong> Request account and data deletion through the app dashboard.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Contact Us</h2>
+            <div class="contact-box">
+                <p>For any privacy-related inquiries, reach out to our support team:</p>
+                <p><strong>Email:</strong> <a href="mailto:support@interviewassist.com">support@interviewassist.com</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 InterviewAssist. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
