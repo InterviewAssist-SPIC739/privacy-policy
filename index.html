@@ -14,7 +14,7 @@
             --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             --text-main: #1e293b;
             --text-muted: #64748b;
-            --card-bg: rgba(255, 255, 255, 0.9);
+            --card-bg: rgba(255, 255, 255, 0.95);
             --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
         }
 
@@ -36,12 +36,12 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             width: 100%;
             background: var(--card-bg);
-            backdrop-filter: blur(10px);
-            padding: 50px;
-            border-radius: 24px;
+            backdrop-filter: blur(12px);
+            padding: 60px;
+            border-radius: 28px;
             box-shadow: var(--shadow);
             animation: fadeIn 0.8s ease-out;
         }
@@ -53,13 +53,13 @@
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             border-bottom: 2px solid #f1f5f9;
             padding-bottom: 30px;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
             color: var(--primary);
             margin-bottom: 10px;
@@ -69,17 +69,17 @@
             color: var(--text-muted);
             font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
         }
 
         section {
-            margin-bottom: 35px;
+            margin-bottom: 45px;
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: var(--text-main);
             display: flex;
             align-items: center;
@@ -89,59 +89,76 @@
             content: "";
             display: inline-block;
             width: 8px;
-            height: 24px;
+            height: 28px;
             background: var(--primary-light);
-            margin-right: 12px;
+            margin-right: 15px;
             border-radius: 4px;
         }
 
         h3 {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 600;
-            margin: 20px 0 10px 0;
+            margin: 25px 0 15px 0;
             color: var(--primary-light);
         }
 
         p {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             color: #334155;
+            font-size: 1.05rem;
         }
 
         ul {
             list-style: none;
             padding-left: 0;
+            margin-bottom: 15px;
         }
 
         li {
-            margin-bottom: 10px;
-            padding-left: 25px;
+            margin-bottom: 12px;
+            padding-left: 28px;
             position: relative;
         }
 
         li::before {
-            content: "•";
+            content: "→";
             color: var(--primary);
             font-weight: bold;
             display: inline-block; 
-            width: 1em;
-            margin-left: -1em;
+            width: 1.2em;
+            margin-left: -1.2em;
             position: absolute;
-            left: 10px;
+            left: 12px;
+        }
+
+        .highlight-box {
+            background: #f1f5f9;
+            padding: 25px;
+            border-radius: 16px;
+            border-left: 5px solid var(--primary);
+            margin: 25px 0;
+        }
+
+        .highlight-box h4 {
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-weight: 700;
         }
 
         .contact-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 12px;
-            border-left: 4px solid var(--primary);
-            margin-top: 20px;
+            background: #eef2ff;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px dashed var(--primary-light);
+            margin-top: 30px;
         }
 
         a {
             color: var(--primary);
             text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
+            font-weight: 600;
+            transition: all 0.2s;
         }
 
         a:hover {
@@ -151,18 +168,23 @@
 
         footer {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 60px;
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 30px;
         }
 
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
         @media (max-width: 600px) {
-            .container {
-                padding: 30px 20px;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
+            .container { padding: 40px 20px; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
@@ -174,62 +196,100 @@
         </header>
 
         <section>
-            <p>Welcome to <strong>InterviewAssist</strong>. Your privacy is a priority for us. This policy outlines how we collect, use, and protect your information when you use our services.</p>
+            <p>At <strong>InterviewAssist</strong>, we believe transparency is the foundation of trust. This detailed Privacy Policy explains our practices regarding the collection, use, and disclosure of your information.</p>
         </section>
 
         <section>
-            <h2>1. Information Collection</h2>
-            <h3>1.1 Personal Data</h3>
+            <h2>1. Information We Collect</h2>
+            <p>We collect information to provide better services to all our users—from students discovering opportunities to alumni sharing their professional journey.</p>
+            
+            <h3>1.1 Voluntary Information</h3>
             <ul>
-                <li><strong>Account Details:</strong> Name, professional email addresses, and encrypted passwords.</li>
-                <li><strong>Profile Details:</strong> Phone number, academic major, graduation year, bio, and professional links (e.g., LinkedIn).</li>
-                <li><strong>Professional Identity:</strong> Current company, designation, and areas of specialization.</li>
+                <li><strong>Identity Data:</strong> Full name, university email, and professional role.</li>
+                <li><strong>Profile Metadata:</strong> Phone number, academic major, graduation year, and professional biography.</li>
+                <li><strong>Professional Links:</strong> URLs to external professional profiles like LinkedIn or GitHub.</li>
             </ul>
 
-            <h3>1.2 Content & Interaction</h3>
+            <h3>1.2 Content & Contributions</h3>
             <ul>
-                <li><strong>Shared Experiences:</strong> Interview insights, difficulty ratings, and preparation strategies shared with the community.</li>
-                <li><strong>Questions & Answers:</strong> Interactions within the student and alumni forums.</li>
-                <li><strong>Activity:</strong> Helpful votes, saved companies, and bookmarks.</li>
+                <li><strong>Knowledge Sharing:</strong> Detailed logs of interview experiences, including company names, roles, difficulty levels, and round-by-round descriptions.</li>
+                <li><strong>Community Activity:</strong> Questions asked in forums, answers provided, and "helpful" validation votes.</li>
             </ul>
-        </section>
 
-        <section>
-            <h2>2. Use of Information</h2>
-            <p>We use your data to provide a seamless experience, including:</p>
+            <h3>1.3 Automatically Collected Data</h3>
             <ul>
-                <li>Managing your professional profile and account security.</li>
-                <li>Facilitating mentor-student interactions (Alumni to Student).</li>
-                <li>Improving our recommendation algorithms for interview preparation.</li>
-                <li>Ensuring platform security through Two-Factor Authentication (2FA).</li>
+                <li><strong>Technical Logs:</strong> IP addresses, browser type, device identifiers, and operating system information.</li>
+                <li><strong>Usage Metrics:</strong> Time spent on specific screens, interaction patterns, and crash reports via Firebase.</li>
             </ul>
         </section>
 
         <section>
-            <h2>3. Secure Processing</h2>
-            <p>We do not sell your personal information. Data is used solely for platform functionality and is protected by industry-standard encryption (HTTPS). We use professional third-party services for secure backend hosting and image management.</p>
-        </section>
-
-        <section>
-            <h2>4. Your Controls</h2>
-            <p>You have full autonomy over your data:</p>
+            <h2>2. How We Use Your Data</h2>
+            <p>Your data enables us to maintain a secure and helpful community for career growth.</p>
             <ul>
-                <li><strong>Edit Profile:</strong> Update your information anytime in the settings.</li>
-                <li><strong>Security:</strong> Enable or disable 2FA at your discretion.</li>
-                <li><strong>Deletion:</strong> Request account and data deletion through the app dashboard.</li>
+                <li><strong>Service Delivery:</strong> To personalize your dashboard and recommend relevant interview content.</li>
+                <li><strong>Platform Security:</strong> To verify identities and facilitate secure Two-Factor Authentication (2FA).</li>
+                <li><strong>Communication:</strong> To notify you about responses to your questions or updates to companies you follow.</li>
+                <li><strong>Analytics:</strong> To perform internal research and improve the platform's user experience.</li>
             </ul>
         </section>
 
         <section>
-            <h2>5. Contact Us</h2>
+            <h2>3. Third-Party Services</h2>
+            <p>We partner with proven service providers to ensure platform stability and security:</p>
+            <ul>
+                <li><strong>Google Firebase:</strong> Used for secure authentication, real-time database management, and crash reporting.</li>
+                <li><strong>Cloud Hosting:</strong> Our backend is hosted on secure, encrypted cloud infrastructure.</li>
+                <li><strong>Analytical Tools:</strong> We use anonymized analytics to understand how users interact with our features.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Data Retention & Deletion</h2>
+            <div class="highlight-box">
+                <h4>Retention Philosophy</h4>
+                <p>We retain your personal information for as long as your account is active. If you choose to delete your account, your personal identifying information is removed from our production databases within 30 days.</p>
+                <p><em>Note: Shared interview experiences may be anonymized and retained to ensure the community continues to benefit from the shared knowledge.</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. International Data Rights (GDPR & CCPA)</h2>
+            <p>Regardless of your location, we respect your right to control your data:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> You can request a copy of all data we hold about you.</li>
+                <li><strong>Right to Rectification:</strong> You can correct inaccurate or incomplete data via your profile settings.</li>
+                <li><strong>Right to Portability:</strong> You can request your data in a machine-readable format.</li>
+                <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can request full account deletion at any time.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Security Measures</h2>
+            <p>We implement multi-layered security protocols:</p>
+            <ul>
+                <li><strong>Encryption:</strong> All data is encrypted in transit using TLS/HTTPS and at rest in our databases.</li>
+                <li><strong>Access Control:</strong> Administrative access is strictly limited and monitored.</li>
+                <li><strong>Regular Audits:</strong> We perform periodic security reviews to stay ahead of potential threats.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Children's Privacy</h2>
+            <p>InterviewAssist is not designed for or marketed to individuals under the age of 13. If we discover we have inadvertently collected data from a child under 13, we will delete it immediately.</p>
+        </section>
+
+        <section>
+            <h2>8. Contact & Support</h2>
             <div class="contact-box">
-                <p>For any privacy-related inquiries, reach out to our support team:</p>
-                <p><strong>Email:</strong> <a href="mailto:interviewassist.alerts@gmail.com">support@interviewassist.com</a></p>
+                <p>Have questions or need to exercise your data rights?</p>
+                <p><strong>Email:</strong> <a href="mailto:interviewassist.alerts@gmail.com">privacy@interviewassist.com</a></p>
+                <p><strong>Support:</strong> <a href="mailto:interviewassist.alerts@gmail.com">support@interviewassist.com</a></p>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2025 InterviewAssist. All rights reserved.</p>
+            <p>&copy; 2026 InterviewAssist Platform. Shaping the future of career preparation.</p>
         </footer>
     </div>
 </body>
